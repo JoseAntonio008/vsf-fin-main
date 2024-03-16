@@ -1,0 +1,248 @@
+.select-container {
+  position: relative;
+  width: 200px;
+}
+
+.spot-select-action {
+  background-color: #4477ce;
+  color: white;
+  outline: none;
+  border: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+}
+
+.select-container i {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  color: white;
+}
+
+.spot-container {
+  height: 85vh;
+  margin-top: 40px;
+  overflow-y: auto;
+}
+
+/* add spot */
+
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+.input-container label {
+  position: absolute;
+  background-color: white;
+  top: 8px;
+  left: 40px;
+  padding: 0px 20px;
+  font-size: 15px;
+  color: #4477ce;
+  transition: 0.5s;
+}
+
+.input-container input:not(:placeholder-shown) ~ label,
+.input-container textarea:not(:placeholder-shown) ~ label {
+  transform: translateY(-20px);
+  font-size: 12px;
+}
+
+.input-container input:focus ~ label,
+.input-container textarea:focus ~ label {
+  transform: translateY(-20px);
+  font-size: 12px;
+}
+
+.input-container input::placeholder,
+.input-container textarea::placeholder {
+  color: #ffffff00;
+}
+
+.upload-container {
+  display: flex;
+}
+
+.upload-container-input-container {
+  background-color: #eef4f4;
+  color: #4477ce;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px rgb(126, 126, 126);
+  margin-left: 70px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.upload-container-input-container label {
+  cursor: pointer;
+}
+
+.upload-container-input-container input {
+  display: none;
+}
+
+.submit-container {
+  background-color: red;
+}
+
+.submit-container input {
+  position: absolute;
+  right: 50px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4477ce;
+  color: white;
+}
+
+/*  */
+.spot-container thead {
+  position: sticky;
+  top: 0;
+}
+
+.spot-container thead tr th {
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+  background-color: #4477ce;
+  font-weight: 600;
+}
+
+.spot-container tr td {
+  padding-left: 10px;
+}
+
+.actions-td {
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.actions-td a {
+  padding: 5px 10px;
+}
+
+/* edit form */
+.spot-edit-container {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #4477ce;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  width: 600px;
+  height: 80vh;
+
+  display: none;
+}
+
+.spot-edit-container center {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+#close-edit-spot-container {
+  color: #4477ce;
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 15px;
+}
+
+.edit-contents-container {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.spot-edit-container .input-container label {
+  padding: 0px 10px;
+  top: 0;
+  left: 15px;
+  transform: translateY(-8px) !important;
+}
+
+.categories-container {
+  display: flex;
+}
+
+.categories-container .select-container {
+  margin-left: 20px;
+  position: relative;
+}
+
+.categories-container .select-container label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  background-color: white;
+  color: #4477ce;
+  padding: 0px 10px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.photo-container img {
+  background-color: black;
+}
+.photo-container embed {
+  height: 100%;
+}
+
+.uploads-container-edit {
+  display: flex;
+  justify-content: space-around;
+}
+
+.uploads-container-edit div {
+  margin: 0;
+  margin: 30px 0px;
+  width: 200px;
+}
+
+.edit-buttons-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#btn-submit-edit-spot {
+  background-color: #4477ce;
+  color: white;
+}
+#btn-submit-edit-spot:hover {
+  background-color: #4477ce;
+}
+
+.frm-upload-new-photo {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #4477ce;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  max-width: 350px;
+
+  display: none;
+}

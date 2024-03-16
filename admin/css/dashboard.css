@@ -1,0 +1,83 @@
+.main-contents-container {
+  height: 98vh;
+  overflow-y: auto;
+}
+
+.top-contents-container {
+  justify-content: space-between;
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  color: #4477ce;
+}
+
+.search-container input {
+  border-radius: 20px;
+  border: 1px solid #4477ce;
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  outline: none;
+}
+
+.db-f-row {
+  display: flex;
+  justify-content: space-around;
+  width: 660px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.db-f-row div {
+  background-color: #4477ce;
+  color: white;
+  padding: 10px 30px;
+}
+
+.db-f-row div p span {
+  font-weight: 600;
+}
+
+.db-s-row {
+  margin-top: 50px;
+}
+
+/*  */
+
+.spot-type-title {
+  margin-top: 40px;
+  color: rgb(46, 46, 46);
+}
+
+.dashboard-spot-type-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-spot-type-container .spot-type-card {
+  box-shadow: 1px 1px 5px rgb(99, 99, 99);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  background-color: #4477ce;
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-spot-type-container .spot-type-card p {
+  font-size: 20px;
+}

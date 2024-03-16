@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.left-container,
+.right-container {
+  width: 50%;
+  height: 100%;
+  background-color: #4477CE;
+}
+
+.VSF {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-img-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../../assets/San_Pablo_City_Cathedral.jpg');
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.VSF .logo {
+  position: absolute;
+  height: 20%;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-contents-container {
+  background-color: white;
+  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.user-icon-container {
+  background-color: #4477CE;
+  font-size: 35px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  transform: translateY(-45px);
+}
+
+/* txt style */
+.username-container,
+.password-container {
+  position: relative;
+  margin: 10px;
+}
+
+.login-contents-container div input {
+  border: 1px solid #4477CE;
+  border-radius: 20px;
+  padding: 20px;
+  height: 40px;
+  width: 220px;
+  outline: none;
+}
+
+/* show password */
+.show-password-container {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #4477CE;
+}
+
+.login-contents-container div label {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 14px;
+
+  background-color: white;
+  color: #4477CE;
+  padding: 0px 10px;
+  transition: all 0.2s;
+  cursor: text;
+}
+
+.login-contents-container div input:focus ~ label {
+  transform: translateY(-18px);
+  font-size: 12px;
+}
+
+.login-contents-container div input:not(:placeholder-shown) ~ label {
+  transform: translateY(-18px);
+  font-size: 12px;
+}
+
+.login-contents-container div input::placeholder {
+  color: rgba(81, 128, 124, 0);
+}
+
+.btn-login {
+  background-color: #4477CE;
+  border-radius: 20px;
+  height: 35px;
+  width: 140px;
+  border: none;
+  margin-top: 5px;
+  color: white;
+  cursor: pointer;
+}

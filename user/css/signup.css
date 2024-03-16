@@ -1,0 +1,142 @@
+body {
+  overflow-y: auto;
+  background-color: black !important;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  opacity: 0.7;
+
+  width: 100%;
+  height: 120%;
+}
+
+.logo {
+  height: 90px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sign-up-form {
+  background-color: rgba(255, 255, 255, 0.747);
+  box-shadow: 1px 1px 5px rgb(139, 139, 139);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+
+  margin: auto;
+  margin-top: 170px;
+}
+
+.signup-title {
+  font-size: 25px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #4477ce;
+}
+
+.f-row,
+.s-row,
+.t-row,
+.frth-row {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin: 10px;
+  position: relative;
+}
+
+.fifth-row {
+  margin-top: 15px;
+}
+
+.s-row .input-container {
+  width: 100%;
+}
+
+input.form-control {
+  border-radius: 99px;
+}
+
+.input-container {
+  position: relative;
+  width: 210px;
+}
+
+.input-container input {
+  width: 100%;
+  height: 45px;
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.input-container input::placeholder {
+  color: rgba(240, 248, 255, 0);
+}
+
+.input-container label {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  cursor: text;
+  transition: 0.5s;
+  color: #4477ce;
+}
+
+.input-container input:focus ~ label {
+  /* transform: translateY(-10px); */
+  top: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.input-container input:not(:placeholder-shown) ~ label {
+  /* transform: translateY(-10px); */
+  top: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.alert {
+  position: fixed !important;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  pointer-events: none;
+  transition: 0.5s;
+  border: none;
+  opacity: 0;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.384);
+  z-index: 5;
+}
+
+.rpc-ic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rpc-ic-container .input-container {
+  margin: 5px;
+}
+
+.fifth-row a, .fifth-row input {
+  border-radius: 99px;
+}

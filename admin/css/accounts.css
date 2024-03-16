@@ -1,0 +1,253 @@
+.select-container {
+  position: relative;
+  width: 200px;
+}
+
+.select-user-type {
+  background-color: #4477ce;
+  color: white;
+  outline: none;
+  border: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+}
+
+.select-container i {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  color: white;
+}
+
+/* table */
+
+.table-container {
+  position: relative;
+  height: 83vh;
+
+  overflow-y: auto;
+  margin-top: 40px;
+}
+
+.table-container table {
+  position: absolute;
+  width: 100%;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+}
+
+.table-container tr th {
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+  background-color: #4477ce;
+  font-weight: 600;
+}
+
+.table-container tr td {
+  padding-left: 10px;
+}
+
+.actions-td {
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.actions-td a {
+  padding: 5px 10px;
+}
+
+.btn-delete-user {
+  background-color: #4477ce !important;
+  border-color: #4477ce !important;
+}
+
+.edit-user-container {
+  position: fixed;
+  width: 500px;
+  top: 20vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 1px 1px 5px #4477ce;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+}
+
+.f-row-container,
+.s-row-container,
+.t-row-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-row-container div,
+.s-row-container div,
+.t-row-container div {
+  position: relative;
+  margin: 5px;
+  margin-top: 30px;
+}
+
+.f-row-container div input,
+.s-row-container div input,
+.t-row-container div input {
+  font-size: 12px;
+  width: 220px;
+  height: 40px;
+}
+
+.f-row-container div label,
+.s-row-container div label,
+.t-row-container div label {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0px 10px;
+  transform: translateY(-10px);
+}
+
+.btn-edit-save {
+  background-color: #4477ce;
+  color: white;
+}
+
+.btn-edit-save:hover {
+  background-color: #4477ce;
+  color: white;
+}
+
+.btn-edit-save-container {
+  margin-top: 20px;
+}
+
+#close-edit-user-container {
+  color: #4477ce;
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 15px;
+}
+
+/* notif */
+
+.alert {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin-top: 20px;
+  border: none;
+  transition: 0.5s;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert p {
+  margin: 0;
+}
+
+/* add-account */
+.add-new-account-container {
+  background-color: #4477ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 10px;
+
+  display: none;
+}
+
+.add-new-account-container a {
+  color: white;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+
+/* add form */
+.add-account-container {
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6%;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  display: none;
+}
+
+.add-account-container center {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 240px;
+  height: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.input-container label {
+  position: absolute;
+  left: 8px;
+  font-size: 10px;
+  top: 2px;
+}
+
+.second-row .input-container input {
+  width: 500px;
+}
+
+
+.input-container input::placeholder {
+  color: #4477ce00;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container input {
+  margin: 5px;
+}
