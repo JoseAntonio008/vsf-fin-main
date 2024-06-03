@@ -193,7 +193,7 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
 
                     echo "<h4>" . ($i++) . ". &nbsp; $title</h4>";
                     echo "<p class=\"vsf-blue font-medium fs-7\">₱ " . number_format($spot_row["BUDGET"], 2, '.', ',') . "</p>";
-                    echo '<div class="btn btn-rate-spot" style="color:white;background-color:blue;" data-spot-id="' . $spot_id . '">Rate</div>';
+                    echo '<div class="spot-container btn btn-rate-spot" style="color:white;background-color:blue;width:150px;height:50px" data-id="' . $spot_id . '">View more</div>';
 
                     echo "<p>$description</p>";
                     echo "<img src='admin/assets/spots-photo/$photoName' alt='$title'>";

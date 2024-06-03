@@ -151,6 +151,10 @@ $(document).ready(function () {
     }
   });
 
+  
+
+
+  
   $(document).on("click", ".spot-container", function (e) {
     e.preventDefault();
     var spotID = $(this).attr("data-id");
