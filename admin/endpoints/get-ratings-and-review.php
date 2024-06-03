@@ -4,8 +4,8 @@ if (isset($_GET['sort'], $_GET['spotType'])) {
 
     $sort = $_GET['sort'];
     $spotType = $_GET['spotType'];
-    $start_date = $_GET['start'];
-    $limit_date = $_GET['end'];
+    $start_date = $_GET['start'] ?? null;
+    $limit_date = $_GET['end'] ?? null;
 
     if ($spotType == 'All') {
         $spot_sql = "SELECT * FROM tourist_spot WHERE `STATUS` = 'active'";

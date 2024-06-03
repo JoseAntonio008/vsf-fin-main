@@ -119,7 +119,7 @@ if (isset($_SESSION['id'])) {
                 <button class="btn btn-secondary" id="budget-sec-btn">Apply</button>
             </div> -->
             <div class="row mt-1">
-                <h5 class="col-12 vsf-blue">Pamasahe Fee</h5>
+                <h5 class="col-12 vsf-blue">Entrance Fee</h5>
                 <div class="row ">
                     <div class="col"><label for="">min</label></div>
                     <div class="col-2"></div>
@@ -203,7 +203,7 @@ if (isset($_SESSION['id'])) {
             </div> -->
 
             <div class="row mt-1">
-                <h5 class="col-12 vsf-blue">pamasahe Fee</h5>
+                <h5 class="col-12 vsf-blue">Entrance Fee</h5>
                 <div class="row ">
                     <div class="col"><label for="">min</label></div>
                     <div class="col-2"></div>
@@ -303,7 +303,7 @@ if (isset($_SESSION['id'])) {
                         <button type="button" onclick="closingButtonTags(this, 'entrance_fee')" id="tags-entrance-fee" class="tags col-4 ms-1" style="width: 159px; display: none;">
                             <div class="row">
                                 <div class="col-12 d-flex p-0">
-                                    <span style="font-size: 15px;">Pamasahe Fee</span>
+                                    <span style="font-size: 15px;">Entrance Fee</span>
                                 </div>
                                 <div class="col-12 d-flex  ps-0">
                                     <span class="button__text" id="tags-entrance-fee-text" style="color:#4477ce">P 100 -P 1000</span>

@@ -193,6 +193,8 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
 
                     echo "<h4>" . ($i++) . ". &nbsp; $title</h4>";
                     echo "<p class=\"vsf-blue font-medium fs-7\">₱ " . number_format($spot_row["BUDGET"], 2, '.', ',') . "</p>";
+                    echo '<div class="btn btn-rate-spot" style="color:white;background-color:blue;" data-spot-id="' . $spot_id . '">Rate</div>';
+
                     echo "<p>$description</p>";
                     echo "<img src='admin/assets/spots-photo/$photoName' alt='$title'>";
                 }
@@ -296,19 +298,12 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
     } else {
         echo 'no';
     }
+   
+    ?>
 
 
-    /*
-    
-    */
 
-    /**
-     * <div class="spot-container card m-2" data-id="<?= $spot_row['SPOT_ID'] ?>">
-        <h6><?php echo $spot_row['SPOT_NAME'] ?></h6>
-        <p><?php echo $spot_row["DESCRIPTION"] ?></p>
 
-        <div>
-            <img class="spot-thumbnail" src="<?php echo "admin/assets/spots-photo/$photoName"; ?>" width="500" alt="" />
-        </div>
-    </div>
-     */
+
+ 
+ 
