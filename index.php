@@ -218,6 +218,10 @@ if (isset($_SESSION['id'])) {
                         <button class="btn btn-secondary " style="width:100%" id="entrance-main-btn">Apply</button>
                     </div>
                 </div>
+                <input type="text" id="location-input" placeholder="Enter location">
+                <button id="location-submit-btn" onclick="console.log('click')">Submit</button>
+
+
             </div>
             <div class="row mt-1">
                 <h5 class="col-12 vsf-blue">Food prices</h5>

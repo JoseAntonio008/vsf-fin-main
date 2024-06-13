@@ -18,7 +18,7 @@ function closingButtonTags(e, purpose) {
   e.style.display = "none";
 }
 
-const getSpot = (search, search_type, type, budget, entranceFee) => {
+const getSpot = (search, search_type, type, budget, entranceFee,location) => {
   console.trace("asdf")
   if (type === "ttd") {
     $(".letters-container").css("display", "flex");
@@ -34,7 +34,8 @@ const getSpot = (search, search_type, type, budget, entranceFee) => {
       search_type: search_type,
       type: type,
       budget: budget ?? "",
-      entranceFee: entranceFee ?? ""
+      entranceFee: entranceFee ?? "",
+      location: location ?? ""
     },
     success: function (response) {
       $("#spots-container .remove-when-changing-the-state").remove();
@@ -44,30 +45,41 @@ const getSpot = (search, search_type, type, budget, entranceFee) => {
 };
 
 $(document).ready(function () {
+  function getLocation() {
+    return $('#location-input').val();
+  }
   // Initial Loaded Title
-  getSpot("A", "LetterPicker", "ttd", getFoodPrice(), getEntranceFee());
+  getSpot("A", "LetterPicker", "ttd", getFoodPrice(), getEntranceFee(),getLocation());
+
+  $("#location-submit-btn").click(function (e) {
+    e.preventDefault();
+    console.log('submit btn is clicked');
+    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee(), getLocation());
+});
 
   // For Range action button
   // * FOOD 
   $("#budget-main-btn-mobile").click(function (e) {
     e.preventDefault();
-    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee());
+    console.log('food btn is clicked');
+    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee(),getLocation());
   });
   $("#budget-main-btn").click(function (e) {
     e.preventDefault();
     console.log("asdf")
-    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee());
+    console.log('submit btn is clicked');
+    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee(),getLocation());
   });
 
   // * ENTRANCE FEE 
   $("#entrance-main-btn-mobile").click(function (e) {
     e.preventDefault();
-    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee());
+    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee(),getLocation());
   });
   $("#entrance-main-btn").click(function (e) {
     e.preventDefault();
     console.log("was clekced", getFoodPrice(), getEntranceFee())
-    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee());
+    getSpot(spotTypeGlobal ? spotTypeGlobal : "", spotTypeGlobal ? "category" : "", "dn", getFoodPrice(), getEntranceFee(),getLocation());
   });
   // * END OF For Range action button
 

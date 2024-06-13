@@ -7,6 +7,7 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
     $type = $_GET['type'];
     $budget = $_GET['budget'];
     $entranceFee =  $_GET['entranceFee'];
+    $location = isset($_GET['location']) ? $_GET['location'] : null;
 
     if ($type == 'reviews') {
 
@@ -43,6 +44,10 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
                 $sql .= " AND `ENTRANCE_FEE` BETWEEN $budRange[0] AND $budRange[1]";
             }
         }
+        if ($location != null) {
+            $sql .= " AND `LOCATION` = '$location'";
+        }
+        
 
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
@@ -172,6 +177,12 @@ if (isset($_GET['search']) && isset($_GET['search_type']) && isset($_GET['type']
                 $sql .= " AND `ENTRANCE_FEE` BETWEEN $budRange[0] AND $budRange[1]";
             }
         }
+
+        if ($location != null) {
+            $sql .= " AND `LOCATION` = '$location'";
+            
+        }
+        
 
         $result = $conn->query($sql);
 
